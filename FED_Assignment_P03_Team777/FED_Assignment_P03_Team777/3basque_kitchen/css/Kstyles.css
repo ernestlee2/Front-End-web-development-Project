@@ -1,0 +1,169 @@
+﻿/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@400;500;600;700&display=swap');
+
+/* Navbar Styles */
+.navbar-brand img{
+    height: 90px;
+    width: 120px;
+}
+.navbar .btn-type {
+    font-weight: 500;
+    color: white;
+    background-color: gray;
+    border-color: gray;
+}
+
+/* Global styles */
+body{
+    font-family: "Spline Sans",sans-serif;
+    color: black;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    transition:0.4ms;
+}
+a:hover{
+    color: lightcoral;
+}
+img{
+    width: 100%;
+}
+
+/* Header styles */
+h1,h2,h3,h4,h5,h6{
+    font-weight: 600;
+    color: black;
+}
+
+/* button styles */
+.btn{
+    border-radius: 8px;
+    padding: 8px 20px;
+}
+.btn-type{
+    font-weight: 500;
+    background-color: white;
+    border-color: white;
+}
+.btn-type:hover {
+    background-color: #f9a3a3;
+    border-color: #f9a3a3;
+    color: white;  
+}
+
+/* Carousel Styles */
+.picture1{
+    background:linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url(../image/K6.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center
+}
+.picture2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),url(../image/K4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+.carousel-control-prev{
+    margin-top: 50px;
+}
+.carousel-control-next{
+    margin-top: 50px; 
+}
+/* About us Style*/
+.about-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: lightgray;
+}
+.about-us img{
+    height:400px;
+}
+.about-us .divider{
+    width: 70px;
+    height: 4px;
+    display: block;
+    background-color: lightcoral;
+}
+
+/* Location styles */
+.location{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: lightgoldenrodyellow;
+}
+
+.location .divider{
+    width: 70px;
+    height: 4px;
+    display: block;
+    background-color: lightcoral;
+}
+.location p{
+    font-size: 20px;
+}
+
+/*Opening hours styles */
+.opening{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background-color: beige;
+}
+.opening .divider {
+    width: 300px;
+    height: 4px;
+    display: block;
+    background-color: lightcoral;
+}
+
+.opening table{
+    text-align: center;
+    border: solid black 2px;
+}
+
+.opening tr, th, td {
+    border: 2px solid;
+    padding: 10px;
+}
+.table-lunch{
+    padding: 20px;
+}
+
+/* Booking Styles*/
+.booking {
+    padding-top: 100px;
+    padding-bottom: 80px;
+}
+.booking .divider{
+    width: 100px;
+    height: 4px;
+    display: block;
+    background-color: lightcoral;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+.booking .message{
+    font-size: 24px;
+}
+.booking img{
+    max-height: 70%;
+    transition: box-shadow 0.3s;
+    }
+.booking img:hover{
+    box-shadow: 0px 10px 20px #888888;
+}
+footer{
+    padding-top:20px;
+    background-color: black;
+    padding-bottom:10px
+}
+footer .btn{
+    max-width:20%;
+    align-items: center;
+}
+footer .row{
+    align-content: center;
+}
+

@@ -1,0 +1,397 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Goh Boon Leong" />
+    <meta name="description" content="FED Assignment" />
+
+    <link href="https://fonts.googleapis.com/css?family=Stint+Ultra+Expanded" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:wght@700&family=Noto+Serif+SC:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/shang_palace.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+    <script src="https://kit.fontawesome.com/6016fa4c26.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="js/shang_script.js" defer></script>
+
+    <title>Shang Palace</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--
+        <div class="row">
+            <div class="col-sm-12">
+                <div w3-include-html="placeh_header.html"></div>
+            </div>
+        </div>
+        -->
+
+        <div class="row" id="headervideo">
+            <div class="col-sm-12">
+                <video autoplay muted loop>
+                    <source src="media/sp_showcase.mp4" type="video/mp4">
+                    <!--Sourced from https://www.youtube.com/watch?app=desktop&v=eQlHDywOQjQ, Video by Just.In.Videos on Youtube-->
+                </video>
+            </div>
+        </div>
+
+        <div class="row" id="videooverlay">
+            <div class="column" id="shanglogo">
+                <img src="media/shang_logo.png" />
+            </div>
+            <div class="column" id="michlogos">
+                <img src="media/michelin_2021.png">
+            </div>
+            <div class="column" id="michlogos">
+                <img src="media/michelin_2022.png">
+            </div>
+        </div>
+
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-custom navbar-dark sticky-top" id="bodynav">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#bodynavlinks">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="bodynavlinks">
+            <ul class="navbar-nav nav-custom mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link single" href="#story">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link single" href="#menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link single" href="#basicinfo">Basic Information</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link single" href="#contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link single" href="#reserve">Reservation</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row" id="story">
+            <div class="col-sm-12" id="storyBg">
+                <div id="storyBgBorder">
+                    <div id="storyHeading">
+                        <h1>ABOUT</h1>
+                    </div>
+                    <section>
+                        <div id="carouselStory" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="false">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselStory" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselStory" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" id="storyFirst">
+                                    <img class="img-fluid" src="media/res_interior.jpg" alt="Restaurant Interior" />
+                                    <!--Sourced from https://www.shangri-la.com/singapore/shangrila/dining/restaurants/shang-palace/-->
+                                    <div id="storyFirstText">
+                                        <h2>Restaurant Background</h2>
+                                        <p>
+                                            Established since 1971, Shang Palace restaurant memorializes the elegance, luxuriance, and dynamism of Cantonese cuisine. While its flavours are redolent of tradition, they are also masterfully crafted with modernism in mind. This harmony of the past and present is preserved by a team of brilliant chefs. On the floor, asian grace and hospitality are nurtured as families feast from one generation to another.
+                                            <br /><br />
+                                            At Shang Palace, legacies are upheld, and new ones are born. A testament to Shang Palace’s commitment to its pursuit, the restaurant has attained the coveted 1 MICHELIN star in the 2021 & 2022 MICHELIN Guide Singapore, and it continues to delight the palates of its patrons.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" id="storySecond">
+                                    <img class="img-fluid" src="media/chef_portrait.png" alt="Chef" />
+                                    <!--Sourced from https://entlife.8world.com/food/shang-palace-welcomes-new-chef-at-the-helm-1930926-->
+                                    <div id="storySecondText">
+                                        <h2>Meet the Chef</h2>
+                                        <p>
+                                            Executive chinese chef Daniel Cheung now helms Shang Palace Singapore, bringing with him decades in world-class Cantonese cooking. The award-winning chef’s experience includes decade-long tenures in some of the most prestigious and revered institutions in his native country Hong Kong. Some of his accolades include a gold award for Creative Appetisers at 2013 HOFEX Modern Chinese Cuisine Challenge; and the Distinction Gold Award for Appetisers at the 10th Asia Culinary Exchange 2016. Combining a traditional foundation with contemporary creativity, Chef Daniel infuses time-honoured classics with modernity and meticulous presentation.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselStory" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselStory" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="menu">
+            <div class="col-sm-12" id="menuBg">
+                <div id="menuBgBorder">
+                    <div id="menuHeading">
+                        <h1>Menu</h1>
+                    </div>
+                    <section>
+                        <img class="img-fluid" src="media/menu_pic.png" alt="Dishes" />
+                        <!--Sourced from https://cnalifestyle.channelnewsasia.com/dining/shangri-la-singapore-shang-palace-50th-anniversary-menu-246546-->
+                        <div id="menuText">
+                            <h2>The Exquisite Flavours of Chinese Cuisine</h2>
+                            &nbsp;<a href="documents/alacartemenu.pdf" id="menuLink" target="_blank">View À La Carte Menu</a>
+                            <br />
+                            &nbsp;<a href="documents/setmenu.pdf" id="menuLink" target="_blank">View Set Menu</a>
+                            <br />
+                            &nbsp;<a href="documents/dimsummenu.pdf" id="menuLink" target="_blank">View Dim Sum Menu</a>
+                            <br />
+                            &nbsp;<a href="documents/b&wmenu.pdf" id="menuLink" target="_blank">View Beverage & Wine Menu</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="basicinfo">
+            <div class="col-sm-12" id="infoBg">
+                <div id="infoBgBorder">
+                    <div id="infoHeading">
+                        <h1>Basic Information</h1>
+                    </div>
+                    <section>
+                        <img class="img-fluid" src="media/shang_entrance.png" alt="Restaurant Entrance" />
+                        <!--Sourced from https://www.quandoo.sg/place/shang-palace-36706/photos-->
+                        <div id="infoText">
+                            <p>
+                                Cuisine: Chinese, Asian<br />
+                                Budget: $$$<br />
+                                Dress Code: Smart Casual<br />
+                                Smoking Policy: Smoking is not permitted.<br />
+                                Facilities & Services:
+                                <table>
+                                    <tr>
+                                        <td>- Air conditioning</td>
+                                        <td id="tableGap"></td>
+                                        <td>- Car park</td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Valet parking</td>
+                                        <td id="tableGap"></td>
+                                        <td>- Wheelchair access</td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Credit/Debit card accepted</td>
+                                        <td id="tableGap"></td>
+                                        <td>- Visa</td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Mastercard</td>
+                                        <td id="tableGap"></td>
+                                        <td>- American Express</td>
+                                    </tr>
+                                    <tr>
+                                        <td>- China UnionPay</td>
+                                        <td id="tableGap"></td>
+                                        <td>- JCB</td>
+                                    </tr>
+                                    <tr>
+                                        <td>- Vegetarian menus</td>
+                                        <td id="tableGap"></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact">
+            <div class="col-sm-12" id="contactBg">
+                <div id="contactBgBorder">
+                    <div id="contactHeading">
+                        <h1>Contact</h1>
+                    </div>
+                    <section>
+                        <div id="contactText">
+                            <p>
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                &nbsp;Shangri-La Singapore 22 Orange Grove Road, Tower Wing, Lobby Level, Singapore 258350
+                                <br /><br />
+                                <i class="fa-sharp fa-solid fa-envelope"></i>
+                                &nbsp;dining.sls@shangri-la.com
+                                <br /><br />
+                                <i class="fa-solid fa-phone-volume"></i>
+                                &nbsp;(65) 6213 4398
+                                <br /><br />
+                                <b>Operating Hours:</b>
+                                <br />
+                                <u>Lunch</u>
+                                <br />
+                                Monday to Friday
+                                <br />
+                                12pm to 2.30pm
+                                <br /><br />
+                                Saturday, Sunday and Public Holidays
+                                <br />
+                                First Seating: 11am to 12:30pm
+                                <br />
+                                Second Seating: 1pm to 3pm
+                                <br /><br />
+                                <u>Dinner</u>
+                                <br />
+                                Monday to Sunday
+                                <br />
+                                6pm to 9:30pm
+                            </p>
+                        </div>
+                        <div id="contactMap">
+                            <iframe src="https://www.google.com/maps/d/embed?mid=1N89riHKl0ToaXydQzinXlIl0e4HYyoA&ehbc=2E312F"></iframe>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="reserve">
+            <div class="col-sm-12" id="reserveBg">
+                <div id="reserveBgBorder">
+                    <div id="reserveHeading">
+                        <h1>Reservation</h1>
+                    </div>
+                    <section>
+                        <img class="img-fluid" src="media/shang_dishes.jpg" alt="Restaurant Dishes" />
+                        <!--Sourced from https://www.shangri-la-sgdining.com/singapore-celebrations/web/shang_palace.aspx-->
+                        <div id="reserveText">
+                            <form id="reserveForm">
+                                <fieldset id="formPt1">
+                                    <h2><b>Booking Details</b></h2>
+
+                                    <p>
+                                        <label for="adultNo">No. of Adults:&nbsp;</label>
+                                        <select name="adultNo" id="adultNo" required>
+                                            <option value=""></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="4">5</option>
+                                            <option value="4">6</option>
+                                            <option value="4">7</option>
+                                            <option value="4">8</option>
+                                            <option value="4">9</option>
+                                            <option value="4">10</option>
+                                        </select>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <label for="childrenNo">No. of Children (Under 12 y/o):&nbsp;</label>
+                                        <select name="childrenNo" id="childrenNo">
+                                            <option value=""></option>
+                                            <option value="1">1</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="4">5</option>
+                                            <option value="4">6</option>
+                                            <option value="4">7</option>
+                                            <option value="4">8</option>
+                                            <option value="4">9</option>
+                                            <option value="4">10</option>
+                                        </select>
+                                    </p>
+
+                                    <p>
+                                        <label for="bookedDate">Date:&nbsp;</label>
+                                        <input type="date" id="bookedDate" required>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <label for="mealPeriod">Meal Period:&nbsp;</label>
+                                        <select name="mealPeriod" id="mealPeriod" disabled required>
+                                            <option value=""></option>
+                                            <option value="lunch">Lunch</option>
+                                            <option value="dinner">Dinner</option>
+                                        </select>
+                                        &nbsp;&nbsp;&nbsp;
+                                        <label for="bookedTime">Time:&nbsp;</label>
+                                        <input type="time" id="bookedTime" value="" step="900" disabled required>
+                                    </p>
+                                </fieldset>
+
+                                <fieldset id="formPt2">
+                                    <h2><b>Personal Particulars</b></h2>
+
+                                    <p>
+                                        <label for="patronName">Name:&nbsp;</label>
+                                        <input type="text" id="patronName" autocomplete="on" required>
+                                    </p>
+
+                                    <p>
+                                        <label for="patronMember">Membership No:&nbsp;</label>
+                                        <input type="text" id="patronMember" autocomplete="on">
+                                    </p>
+
+                                    <p>
+                                        <label for="patronNumber">Mobile No:&nbsp;</label>
+                                        <input type="text" id="patronNumber" autocomplete="on" required>
+                                    </p>
+
+                                    <p>
+                                        <label for="patronEmail">Email:&nbsp;</label>
+                                        <input type="email" id="patronEmail" autocomplete="on">
+                                    </p>
+
+                                    <p>
+                                        <label for="patronOccasion">Occasion:&nbsp;</label>
+                                        <select name="patronOccasion" id="patronOccasion" required>
+                                            <option value="casualDining">Casual Dining</option>
+                                            <option value="bday">Birthday</option>
+                                            <option value="anniv">Anniversary</option>
+                                            <option value="business">Business Meeting</option>
+                                            <option value="comp">Company Gathering</option>
+                                        </select>
+                                    </p>
+
+                                    <p>
+                                        <label for="patronRequests" style="vertical-align:top">Special Requests:&nbsp;</label>
+                                        <textarea id="patronRequests" cols="30" style="min-height: 80px" name="patronRequests" autocomplete="off"></textarea>
+                                    </p>
+
+                                </fieldset>
+
+                                <fieldset id="formPt3">
+                                    <p id="reserveSubmission">
+                                        <button type="submit" id="submit">Submit</button>
+                                        <input type="reset" value="Reset" name="reset" id="reset" />
+                                    </p>
+                                </fieldset>
+                            </form>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div w3-include-html="hp_footer.html"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        w3.includeHTML();
+    </script>
+
+    <script>
+        const phoneInputField = document.querySelector("#patronNumber");
+        const phoneInput = window.intlTelInput(phoneInputField, {
+            initialCountry: "sg",
+            utilsScript:
+                "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+        });
+    </script>
+</body>
+</html>

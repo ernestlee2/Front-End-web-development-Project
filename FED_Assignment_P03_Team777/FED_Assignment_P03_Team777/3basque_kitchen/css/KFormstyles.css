@@ -1,0 +1,44 @@
+﻿/* Global styles */
+body{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../image/K5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.reservation-form-box{
+    max-width: 650px;
+    border: 6px solid lightcoral;
+    border-radius: 20px;
+    margin: 10% auto 0;
+}
+label{
+    color: white;
+}
+.content-box{
+    padding:20px;
+    color: white;
+}
+.back {
+    margin-top: 50px;
+    margin-left: 790px;
+    margin-bottom: 116px;
+}
+.button {
+    border-radius: 8px;
+    padding: 8px 20px;
+    font-weight: 500;
+    background-color: white;
+    border-color: white;
+    text-decoration: none;
+}
+.button:hover{
+    background-color: #f9a3a3;
+    border-color: #f9a3a3;
+    color: white; 
+}
+h2{
+    color: white;
+    margin-left: 25px;
+        
+}

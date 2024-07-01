@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   
+    <link rel="stylesheet" href="CSS/Form.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=1">
+    <script src="Js/JavaE.js" defer></script>
+
+
+
+
+</head>
+<body>
+    <div class="c1">
+        <div class="container">
+            <div class="title">Reservation</div>
+            <form action="#" id="reserveform" onsubmit="submitForm()">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" placeholder="Enter your name" required />
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Email </span>
+                        <input type="email" placeholder="Enter your Email" size="50" required />
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input type="text" placeholder="Enter your phone number" size="8" pattern="[689]\d{7}" required />
+                    </div>
+
+                    <div class="input-box" id="num">
+                        <span class="details">Guests</span>
+                        <input type="number" placeholder="Enter number of guests" min="1" max="5" required />
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Date</span>
+                        <input type="date" id="iDate" placeholder="Enter date of reservation" required />
+                    </div>
+
+                    <div class="input-box">
+                        <select class="details" required>
+                            <option disabled hidden selected>Time</option>
+                            <option value="12.00">12.00pm to 1.45pm (Lunch)</option>
+                            <option value="6.30">6.30pm to 8.45pm (Dinner)</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="button">
+                    <input type="submit" value="Reserve" />
+                    <input type="reset" onclick="resetForm()" value="Reset" />
+                </div>
+                <p id="finalMessage"></p>
+            </form>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
